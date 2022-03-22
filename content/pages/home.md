@@ -1,20 +1,12 @@
 ---
 blocks:
-  - headline: Welcome to the Tina Starter
-    text: >
-      This project is set up to show you the basics of working with Tina. You're
-      looking at the landing page, which pulls content from
-      content/pages/home.md, components from components/blocks, and puts them
-      all together in pages/\[filename].tsx, all based on a schema defined in
-      .tina/schema.ts.
+  - tagline: ''
+    headline: Kavi Mathur
+    text: "I am a UCI alum pursuing a career in\_**front-end engineering**,\_**user exper****ience design**, or any career that keeps me working with the\_**web**. I am currently a front-end developer for GoldenComm and was previously a Data Analyst for UCI's Office of Research.\n"
     actions:
-      - label: Get Started
+      - label: My Work
         type: button
         icon: true
-        link: /posts
-      - label: Read Blog
-        type: link
-        icon: false
         link: /posts
     image:
       src: >-
@@ -24,27 +16,24 @@ blocks:
     _template: hero
   - items:
       - icon:
-          color: red
+          color: green
           style: float
-          name: code
-        title: Amazing Feature
-        text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
+          name: user
+        title: 22 years old
+        text: ''
       - icon:
           color: primary
           style: float
           name: like
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        title: He / Him / His
+        text: ''
       - icon:
           color: green
           style: float
-          name: palette
-        title: Configurable Theme
-        text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+          name: world
+        title: 'Irvine, CA'
+        text: ''
     color: tint
     _template: features
 ---
+

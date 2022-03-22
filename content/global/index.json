@@ -1,9 +1,9 @@
 {
   "header": {
     "icon": {
-      "color": "orange",
+      "color": "teal",
       "style": "float",
-      "name": "tina"
+      "name": "aperture"
     },
     "color": "default",
     "nav": [
@@ -30,9 +30,9 @@
     }
   },
   "theme": {
-    "color": "blue",
+    "color": "green",
     "font": "sans",
-    "icon": "boxicon",
-    "darkMode": "system"
+    "icon": "heroicon",
+    "darkMode": "dark"
   }
 }
