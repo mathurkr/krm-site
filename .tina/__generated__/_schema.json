@@ -8,7 +8,7 @@
   "meta": {},
   "collections": [
     {
-      "label": "Blog Posts",
+      "label": "My Portfolio",
       "name": "posts",
       "path": "content/posts",
       "format": "mdx",

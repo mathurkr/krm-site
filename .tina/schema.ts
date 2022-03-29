@@ -9,7 +9,7 @@ import { iconSchema } from "../components/icon";
 export default defineSchema({
   collections: [
     {
-      label: "Blog Posts",
+      label: "My Portfolio",
       name: "posts",
       path: "content/posts",
       format: "mdx",

@@ -2,7 +2,7 @@
 blocks:
   - tagline: ''
     headline: Kavi Mathur
-    text: "I am a UCI alum pursuing a career in\_**front-end engineering**,\_**user exper****ience design**, or any career that keeps me working with the\_**web**. I am currently a front-end developer for GoldenComm and was previously a Data Analyst for UCI's Office of Research.\n"
+    text: "I am a UCI alum pursuing a career in\_**front-end engineering**,\_**user experience design**, or any career that keeps me working with the\_**web**. I am currently a front-end developer for GoldenComm and was previously a Data Analyst for UCI's Office of Research.\n"
     actions:
       - label: My Work
         type: button
