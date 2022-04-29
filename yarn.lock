@@ -1126,9 +1126,9 @@
   version "3.1.1"
   resolved "https://registry.npmjs.org/@graphql-typed-document-node/core/-/core-3.1.1.tgz"
 
-"@headlessui/react@^1.4.1", "@headlessui/react@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/@headlessui/react/-/react-1.4.2.tgz"
+"@headlessui/react@^1.4.1", "@headlessui/react@^1.5.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.6.0.tgz#5943c0b1e5b1a02566ab45f665a05188b1d079c5"
 
 "@heroicons/react@^1.0.4", "@heroicons/react@^1.0.5":
   version "1.0.5"
@@ -1200,6 +1200,16 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
+
+"@kwsites/file-exists@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@kwsites/file-exists/-/file-exists-1.1.1.tgz#ad1efcac13e1987d8dbaf235ef3be5b0d96faa99"
+  dependencies:
+    debug "^4.1.1"
+
+"@kwsites/promise-deferred@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz#8ace5259254426ccef57f3175bc64ed7095ed919"
 
 "@next/env@12.1.0":
   version "12.1.0"
@@ -1763,24 +1773,24 @@
   dependencies:
     zod "^3.14.3"
 
-"@tinacms/sharedctx@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@tinacms/sharedctx/-/sharedctx-0.1.0.tgz"
+"@tinacms/sharedctx@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/sharedctx/-/sharedctx-0.1.1.tgz#8ca3446348b87653095a4a3bda797ddaa65d4d38"
 
-"@tinacms/toolkit@0.56.18":
-  version "0.56.18"
-  resolved "https://registry.npmjs.org/@tinacms/toolkit/-/toolkit-0.56.18.tgz"
+"@tinacms/toolkit@0.56.24":
+  version "0.56.24"
+  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.56.24.tgz#de88a530e904d440854dfbe5161d2caa367cc969"
   dependencies:
     "@floating-ui/dom" "^0.1.7"
     "@floating-ui/react-dom" "^0.3.3"
-    "@headlessui/react" "^1.4.2"
+    "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.5"
     "@react-aria/i18n" "^3.3.4"
     "@react-aria/listbox" "3.3.0"
     "@react-types/combobox" "^3.2.0"
     "@react-types/shared" "^3.10.0"
     "@sambego/storybook-styles" "^1.0.0"
-    "@tinacms/sharedctx" "0.1.0"
+    "@tinacms/sharedctx" "0.1.1"
     "@types/atob" "^2.1.2"
     "@types/cors" "^2.8.12"
     "@types/express" "^4.17.13"
@@ -1828,7 +1838,7 @@
     react-dropzone "10.1.8"
     react-final-form "^6.3.0"
     react-icons "^4.3.1"
-    simple-git "1.126.0"
+    simple-git "3.5.0"
     slate "^0.66.0"
     slate-history "^0.66.0"
     slate-hyperscript "^0.66.0"
@@ -3925,7 +3935,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
+debug@^4.0.0, debug@^4.1.0, debug@^4.1.1:
   version "4.3.2"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   dependencies:
@@ -7668,11 +7678,13 @@ signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/signedsource/-/signedsource-1.0.0.tgz"
 
-simple-git@1.126.0:
-  version "1.126.0"
-  resolved "https://registry.npmjs.org/simple-git/-/simple-git-1.126.0.tgz"
+simple-git@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.5.0.tgz#3c3538f4d7a1b3c8f3904412b12740bdcad9c8b1"
   dependencies:
-    debug "^4.0.1"
+    "@kwsites/file-exists" "^1.1.1"
+    "@kwsites/promise-deferred" "^1.1.1"
+    debug "^4.3.3"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
@@ -8091,15 +8103,16 @@ throttle-debounce@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/throttle-debounce/-/throttle-debounce-3.0.1.tgz"
 
-tinacms@^0.66.9:
-  version "0.66.9"
-  resolved "https://registry.npmjs.org/tinacms/-/tinacms-0.66.9.tgz"
+tinacms@^0.68.1:
+  version "0.68.1"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.68.1.tgz#489872654364f31525f0d2a917bd69954de39b8e"
   dependencies:
     "@graphql-tools/relay-operation-optimizer" "^6.4.1"
-    "@headlessui/react" "^1.4.1"
+    "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.4"
-    "@tinacms/sharedctx" "0.1.0"
-    "@tinacms/toolkit" "0.56.18"
+    "@tinacms/schema-tools" "0.0.3"
+    "@tinacms/sharedctx" "0.1.1"
+    "@tinacms/toolkit" "0.56.24"
     crypto-js "^4.0.0"
     final-form "4.20.1"
     graphql "^15.1.0"
