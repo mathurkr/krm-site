@@ -1638,9 +1638,9 @@
   version "0.50.2"
   resolved "https://registry.npmjs.org/@tinacms/auth/-/auth-0.50.2.tgz"
 
-"@tinacms/cli@^0.60.15":
-  version "0.60.15"
-  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.60.15.tgz#080489c3d77b6ed8f40bd5cb4e1489b5eaa802a7"
+"@tinacms/cli@^0.60.21":
+  version "0.60.21"
+  resolved "https://registry.yarnpkg.com/@tinacms/cli/-/cli-0.60.21.tgz#f62d4ec83d3aab03557076fa4d0ecfbe4ab0c466"
   dependencies:
     "@graphql-codegen/core" "^2.1.0"
     "@graphql-codegen/plugin-helpers" latest
@@ -1651,9 +1651,9 @@
     "@graphql-tools/graphql-file-loader" "^7.2.0"
     "@graphql-tools/load" "^7.3.2"
     "@tinacms/datalayer" "0.1.1"
-    "@tinacms/graphql" "0.60.0"
+    "@tinacms/graphql" "0.60.6"
     "@tinacms/metrics" "0.0.3"
-    "@tinacms/schema-tools" "0.0.3"
+    "@tinacms/schema-tools" "0.0.4"
     "@yarnpkg/esbuild-plugin-pnp" "^2.0.1-rc.3"
     add "^2.0.6"
     ajv "^6.12.3"
@@ -1665,6 +1665,7 @@
     chokidar "^3.5.1"
     commander "^9.0.0"
     cors "^2.8.5"
+    dotenv "^16.0.1"
     esbuild "^0.14.20"
     esm "3.2.25"
     express "^4.17.1"
@@ -1675,6 +1676,7 @@
     lodash "^4.17.19"
     lodash.get "^4.4.2"
     log4js "^6.4.0"
+    multer "^1.4.4"
     normalize-path "^3.0.0"
     progress "^2.0.3"
     prompts "^2.4.1"
@@ -1704,9 +1706,9 @@
     prettier "^2.2.1"
     yup "^0.32.9"
 
-"@tinacms/graphql@0.60.0":
-  version "0.60.0"
-  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.60.0.tgz#5ea5f60205f49db2210e804331397f1196e3f6f2"
+"@tinacms/graphql@0.60.6":
+  version "0.60.6"
+  resolved "https://registry.yarnpkg.com/@tinacms/graphql/-/graphql-0.60.6.tgz#0fe680ed6b7f51f75d49d21f41eb348877997a50"
   dependencies:
     "@graphql-tools/relay-operation-optimizer" "^6.4.1"
     "@tinacms/datalayer" "0.1.1"
@@ -1757,9 +1759,9 @@
   dependencies:
     isomorphic-fetch "^3.0.0"
 
-"@tinacms/schema-tools@0.0.3":
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-0.0.3.tgz#8d2887e75b44b7d00dccbe2c2e28021568246c88"
+"@tinacms/schema-tools@0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-0.0.4.tgz#dd020c7218a6718b755eaba093dd8ba2064fa72e"
   dependencies:
     zod "^3.14.3"
 
@@ -4083,6 +4085,10 @@ dot-case@^3.0.4:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+dotenv@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.1.tgz#8f8f9d94876c35dac989876a5d3a82a267fdce1d"
+
 downshift@6.1.7:
   version "6.1.7"
   resolved "https://registry.npmjs.org/downshift/-/downshift-6.1.7.tgz"
@@ -6320,7 +6326,7 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5:
+minimist@^1.1.1, minimist@^1.2.0, minimist@^1.2.5, minimist@^1.2.6:
   version "1.2.6"
   resolved "https://registry.npmjs.org/minimist/-/minimist-1.2.6.tgz"
 
@@ -6343,6 +6349,12 @@ mkdirp@^0.5.1, mkdirp@~0.5.1:
   resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.5.tgz"
   dependencies:
     minimist "^1.2.5"
+
+mkdirp@^0.5.4:
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.6.tgz#7def03d2432dcae4ba1d611445c48396062255f6"
+  dependencies:
+    minimist "^1.2.6"
 
 modern-normalize@^1.1.0:
   version "1.1.0"
@@ -6372,7 +6384,7 @@ ms@^2.1.1:
   version "2.1.3"
   resolved "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
 
-multer@1.4.2, multer@^1.4.2:
+multer@1.4.2:
   version "1.4.2"
   resolved "https://registry.npmjs.org/multer/-/multer-1.4.2.tgz"
   dependencies:
@@ -6380,6 +6392,19 @@ multer@1.4.2, multer@^1.4.2:
     busboy "^0.2.11"
     concat-stream "^1.5.2"
     mkdirp "^0.5.1"
+    object-assign "^4.1.1"
+    on-finished "^2.3.0"
+    type-is "^1.6.4"
+    xtend "^4.0.0"
+
+multer@^1.4.2, multer@^1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/multer/-/multer-1.4.4.tgz#e2bc6cac0df57a8832b858d7418ccaa8ebaf7d8c"
+  dependencies:
+    append-field "^1.0.0"
+    busboy "^0.2.11"
+    concat-stream "^1.5.2"
+    mkdirp "^0.5.4"
     object-assign "^4.1.1"
     on-finished "^2.3.0"
     type-is "^1.6.4"
