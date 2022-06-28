@@ -868,7 +868,7 @@
     "@babel/plugin-transform-react-jsx-development" "^7.16.0"
     "@babel/plugin-transform-react-pure-annotations" "^7.16.0"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.14.8", "@babel/runtime@^7.15.4", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.10.0", "@babel/runtime@^7.14.8", "@babel/runtime@^7.15.4", "@babel/runtime@^7.6.2", "@babel/runtime@^7.7.6", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.17.2"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.17.2.tgz"
   dependencies:
@@ -1126,9 +1126,9 @@
   version "3.1.1"
   resolved "https://registry.npmjs.org/@graphql-typed-document-node/core/-/core-3.1.1.tgz"
 
-"@headlessui/react@^1.4.1", "@headlessui/react@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.npmjs.org/@headlessui/react/-/react-1.4.2.tgz"
+"@headlessui/react@^1.4.1", "@headlessui/react@^1.5.0":
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.6.5.tgz#5587c537de809cf3146eb2ff263e5e940b1bf69c"
 
 "@heroicons/react@^1.0.4", "@heroicons/react@^1.0.5":
   version "1.0.5"
@@ -1200,6 +1200,16 @@
     "@types/node" "*"
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
+
+"@kwsites/file-exists@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@kwsites/file-exists/-/file-exists-1.1.1.tgz#ad1efcac13e1987d8dbaf235ef3be5b0d96faa99"
+  dependencies:
+    debug "^4.1.1"
+
+"@kwsites/promise-deferred@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@kwsites/promise-deferred/-/promise-deferred-1.1.1.tgz#8ace5259254426ccef57f3175bc64ed7095ed919"
 
 "@next/env@12.1.0":
   version "12.1.0"
@@ -1375,7 +1385,7 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@popperjs/core@2.10.2", "@popperjs/core@^2.9.0":
+"@popperjs/core@2.10.2":
   version "2.10.2"
   resolved "https://registry.npmjs.org/@popperjs/core/-/core-2.10.2.tgz"
 
@@ -1462,21 +1472,33 @@
     "@react-types/shared" "^3.10.1"
     clsx "^1.1.1"
 
-"@react-dnd/asap@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/@react-dnd/asap/-/asap-4.0.0.tgz"
+"@react-hook/debounce@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@react-hook/debounce/-/debounce-3.0.0.tgz#9eea8b5d81d4cb67cd72dd8657b3ff724afc7cad"
+  dependencies:
+    "@react-hook/latest" "^1.0.2"
 
-"@react-dnd/invariant@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@react-dnd/invariant/-/invariant-2.0.0.tgz"
+"@react-hook/event@^1.2.1":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@react-hook/event/-/event-1.2.6.tgz#52f91578add934acc1203328ca09ab14fc7ee58e"
 
-"@react-dnd/shallowequal@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.npmjs.org/@react-dnd/shallowequal/-/shallowequal-2.0.0.tgz"
+"@react-hook/latest@^1.0.2":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@react-hook/latest/-/latest-1.0.3.tgz#c2d1d0b0af8b69ec6e2b3a2412ba0768ac82db80"
 
-"@react-hook/merged-ref@^1.3.0":
-  version "1.3.2"
-  resolved "https://registry.npmjs.org/@react-hook/merged-ref/-/merged-ref-1.3.2.tgz"
+"@react-hook/throttle@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@react-hook/throttle/-/throttle-2.2.0.tgz#d0402714a06e1ba0bc1da1fdf5c3c5cd0e08d45a"
+  dependencies:
+    "@react-hook/latest" "^1.0.2"
+
+"@react-hook/window-size@^3.0.7":
+  version "3.0.7"
+  resolved "https://registry.yarnpkg.com/@react-hook/window-size/-/window-size-3.0.7.tgz#00d176e7a8eb55814e161eae34aae20afbcbe35d"
+  dependencies:
+    "@react-hook/debounce" "^3.0.0"
+    "@react-hook/event" "^1.2.1"
+    "@react-hook/throttle" "^2.2.0"
 
 "@react-stately/collections@^3.3.2", "@react-stately/collections@^3.3.3":
   version "3.3.4"
@@ -1763,30 +1785,36 @@
   dependencies:
     zod "^3.14.3"
 
-"@tinacms/sharedctx@0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@tinacms/sharedctx/-/sharedctx-0.1.0.tgz"
+"@tinacms/schema-tools@0.0.6":
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/@tinacms/schema-tools/-/schema-tools-0.0.6.tgz#a326a17a8f960f13c43796d7cde8f266a8bde97a"
+  dependencies:
+    zod "^3.14.3"
 
-"@tinacms/toolkit@0.56.18":
-  version "0.56.18"
-  resolved "https://registry.npmjs.org/@tinacms/toolkit/-/toolkit-0.56.18.tgz"
+"@tinacms/sharedctx@0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@tinacms/sharedctx/-/sharedctx-0.1.1.tgz#8ca3446348b87653095a4a3bda797ddaa65d4d38"
+
+"@tinacms/toolkit@0.56.34":
+  version "0.56.34"
+  resolved "https://registry.yarnpkg.com/@tinacms/toolkit/-/toolkit-0.56.34.tgz#d66ebf5dbfa24f468e1c82be66743dfc686e0883"
   dependencies:
     "@floating-ui/dom" "^0.1.7"
     "@floating-ui/react-dom" "^0.3.3"
-    "@headlessui/react" "^1.4.2"
+    "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.5"
     "@react-aria/i18n" "^3.3.4"
     "@react-aria/listbox" "3.3.0"
+    "@react-hook/window-size" "^3.0.7"
     "@react-types/combobox" "^3.2.0"
     "@react-types/shared" "^3.10.0"
     "@sambego/storybook-styles" "^1.0.0"
-    "@tinacms/sharedctx" "0.1.0"
+    "@tinacms/sharedctx" "0.1.1"
     "@types/atob" "^2.1.2"
     "@types/cors" "^2.8.12"
     "@types/express" "^4.17.13"
     "@types/multer" "^1.4.7"
     "@types/prop-types" "^15.7.4"
-    "@udecode/plate" "^7.0.3"
     "@udecode/plate-autoformat" "^9.2.1"
     "@udecode/plate-basic-elements" "^9.2.1"
     "@udecode/plate-basic-marks" "^9.2.1"
@@ -1818,6 +1846,7 @@
     final-form-set-field-data "^1.0.2"
     is-hotkey "^0.2.0"
     lodash.get "^4.4.2"
+    mime-types "^2.1.24"
     moment ">=2 <=3"
     multer "1.4.2"
     path "^0.12.7"
@@ -1828,18 +1857,12 @@
     react-dropzone "10.1.8"
     react-final-form "^6.3.0"
     react-icons "^4.3.1"
-    simple-git "1.126.0"
+    simple-git "3.5.0"
     slate "^0.66.0"
     slate-history "^0.66.0"
     slate-hyperscript "^0.66.0"
     slate-react "^0.66.0"
     webfontloader "1.6.28"
-
-"@tippyjs/react@^4.2.0", "@tippyjs/react@^4.2.5":
-  version "4.2.6"
-  resolved "https://registry.npmjs.org/@tippyjs/react/-/react-4.2.6.tgz"
-  dependencies:
-    tippy.js "^6.3.1"
 
 "@types/acorn@^4.0.0":
   version "4.0.6"
@@ -1967,10 +1990,6 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/js-cookie@^2.2.6":
-  version "2.2.7"
-  resolved "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-2.2.7.tgz"
-
 "@types/js-cookie@^3.0.0":
   version "3.0.1"
   resolved "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-3.0.1.tgz"
@@ -2087,62 +2106,11 @@
   version "0.8.3"
   resolved "https://registry.npmjs.org/@types/zen-observable/-/zen-observable-0.8.3.tgz"
 
-"@udecode/plate-alignment-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-alignment-ui/-/plate-alignment-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-alignment" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-alignment@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-alignment/-/plate-alignment-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-ast-serializer@7.0.2", "@udecode/plate-ast-serializer@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-ast-serializer/-/plate-ast-serializer-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-block-quote" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-heading" "7.0.2"
-    "@udecode/plate-link" "7.0.2"
-    "@udecode/plate-list" "7.0.2"
-    "@udecode/plate-paragraph" "7.0.2"
-    "@udecode/plate-serializer" "7.0.2"
-    remark-parse "^9.0.0"
-    remark-slate "^1.4.0"
-    unified "^9.2.0"
-
-"@udecode/plate-autoformat@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-autoformat/-/plate-autoformat-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-autoformat@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-autoformat/-/plate-autoformat-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-basic-elements@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-basic-elements/-/plate-basic-elements-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-block-quote" "7.0.2"
-    "@udecode/plate-code-block" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-heading" "7.0.2"
-    "@udecode/plate-paragraph" "7.0.2"
 
 "@udecode/plate-basic-elements@^9.2.1":
   version "9.3.1"
@@ -2154,34 +2122,11 @@
     "@udecode/plate-heading" "9.3.1"
     "@udecode/plate-paragraph" "9.3.1"
 
-"@udecode/plate-basic-marks@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-basic-marks/-/plate-basic-marks-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-basic-marks@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-basic-marks/-/plate-basic-marks-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-block-quote-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-block-quote-ui/-/plate-block-quote-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-block-quote" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-
-"@udecode/plate-block-quote@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-block-quote/-/plate-block-quote-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
 
 "@udecode/plate-block-quote@9.3.1", "@udecode/plate-block-quote@^9.2.1":
   version "9.3.1"
@@ -2189,38 +2134,11 @@
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-break@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-break/-/plate-break-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-break@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-break/-/plate-break-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-code-block-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-code-block-ui/-/plate-code-block-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-code-block" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-code-block@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-code-block/-/plate-code-block-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-ast-serializer" "^7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-html-serializer" "^7.0.2"
-    prismjs "^1.25.0"
 
 "@udecode/plate-code-block@9.3.1", "@udecode/plate-code-block@^9.2.1":
   version "9.3.1"
@@ -2228,18 +2146,6 @@
   dependencies:
     "@udecode/plate-core" "9.3.1"
     prismjs "^1.25.0"
-
-"@udecode/plate-combobox@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-combobox/-/plate-combobox-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-popper" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/zustood" "0.4.0"
-    downshift "6.1.7"
-    zustand "3.5.11"
 
 "@udecode/plate-combobox@9.3.1":
   version "9.3.1"
@@ -2250,7 +2156,7 @@
     downshift "6.1.7"
     zustand "3.6.7"
 
-"@udecode/plate-common@7.0.2", "@udecode/plate-common@^7.0.2":
+"@udecode/plate-common@^7.0.2":
   version "7.0.2"
   resolved "https://registry.npmjs.org/@udecode/plate-common/-/plate-common-7.0.2.tgz"
   dependencies:
@@ -2275,89 +2181,11 @@
     use-deep-compare "1.1.0"
     zustand "3.6.7"
 
-"@udecode/plate-csv-serializer@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-csv-serializer/-/plate-csv-serializer-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-serializer" "7.0.2"
-    "@udecode/plate-table" "7.0.2"
-    papaparse "^5.3.1"
-
-"@udecode/plate-dnd@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-dnd/-/plate-dnd-7.0.2.tgz"
-  dependencies:
-    "@react-hook/merged-ref" "^1.3.0"
-    "@tippyjs/react" "^4.2.0"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    react-dnd "^14.0.2"
-    react-dnd-html5-backend "^14.0.0"
-
-"@udecode/plate-find-replace-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-find-replace-ui/-/plate-find-replace-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-find-replace" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-find-replace@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-find-replace/-/plate-find-replace-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-font-ui@7.0.3":
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/@udecode/plate-font-ui/-/plate-font-ui-7.0.3.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-font" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-    "@udecode/plate-ui-button" "7.0.3"
-
-"@udecode/plate-font@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-font/-/plate-font-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-heading@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-heading/-/plate-heading-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-heading@9.3.1", "@udecode/plate-heading@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-heading/-/plate-heading-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-highlight@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-highlight/-/plate-highlight-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-horizontal-rule@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-horizontal-rule/-/plate-horizontal-rule-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
 
 "@udecode/plate-horizontal-rule@^9.2.1":
   version "9.3.1"
@@ -2365,102 +2193,17 @@
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-html-serializer@7.0.2", "@udecode/plate-html-serializer@^7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-html-serializer/-/plate-html-serializer-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-serializer" "7.0.2"
-
-"@udecode/plate-image-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-image-ui/-/plate-image-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-image" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-    re-resizable "^6.9.0"
-    react-textarea-autosize "^8.3.3"
-
-"@udecode/plate-image@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-image/-/plate-image-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-image@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-image/-/plate-image-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-indent-list@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-indent-list/-/plate-indent-list-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-indent" "7.0.2"
-    "@udecode/plate-list" "7.0.2"
-
-"@udecode/plate-indent@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-indent/-/plate-indent-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-kbd@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-kbd/-/plate-kbd-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-kbd@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-kbd/-/plate-kbd-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-line-height-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-line-height-ui/-/plate-line-height-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-line-height" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-line-height@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-line-height/-/plate-line-height-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-link-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-link-ui/-/plate-link-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-link" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-link@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-link/-/plate-link-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-normalizers" "7.0.2"
 
 "@udecode/plate-link@^9.2.1":
   version "9.3.1"
@@ -2469,24 +2212,6 @@
     "@udecode/plate-core" "9.3.1"
     "@udecode/plate-normalizers" "9.3.1"
 
-"@udecode/plate-list-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-list-ui/-/plate-list-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-list" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-list@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-list/-/plate-list-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-reset-node" "7.0.2"
-
 "@udecode/plate-list@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-list/-/plate-list-9.3.1.tgz"
@@ -2494,77 +2219,11 @@
     "@udecode/plate-core" "9.3.1"
     "@udecode/plate-reset-node" "9.3.1"
 
-"@udecode/plate-md-serializer@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-md-serializer/-/plate-md-serializer-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-block-quote" "7.0.2"
-    "@udecode/plate-code-block" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-heading" "7.0.2"
-    "@udecode/plate-link" "7.0.2"
-    "@udecode/plate-list" "7.0.2"
-    "@udecode/plate-paragraph" "7.0.2"
-    "@udecode/plate-serializer" "7.0.2"
-    remark-parse "^9.0.0"
-    remark-slate "^1.4.0"
-    unified "^9.2.0"
-
-"@udecode/plate-media-embed-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-media-embed-ui/-/plate-media-embed-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-media-embed" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-
-"@udecode/plate-media-embed@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-media-embed/-/plate-media-embed-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-mention-ui@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-mention-ui/-/plate-mention-ui-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-combobox" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-mention" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-
-"@udecode/plate-mention@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-mention/-/plate-mention-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-combobox" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-node-id@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-node-id/-/plate-node-id-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-node-id@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-node-id/-/plate-node-id-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-normalizers@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-normalizers/-/plate-normalizers-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
 
 "@udecode/plate-normalizers@9.3.1", "@udecode/plate-normalizers@^9.2.1":
   version "9.3.1"
@@ -2572,42 +2231,11 @@
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-paragraph@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-paragraph/-/plate-paragraph-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-paragraph@9.3.1", "@udecode/plate-paragraph@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-paragraph/-/plate-paragraph-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-placeholder@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-placeholder/-/plate-placeholder-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-
-"@udecode/plate-popper@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-popper/-/plate-popper-7.0.2.tgz"
-  dependencies:
-    "@popperjs/core" "2.10.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    react-popper "2.2.5"
-
-"@udecode/plate-reset-node@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-reset-node/-/plate-reset-node-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
 
 "@udecode/plate-reset-node@9.3.1", "@udecode/plate-reset-node@^9.2.1":
   version "9.3.1"
@@ -2615,33 +2243,11 @@
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-select@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-select/-/plate-select-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-select@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-select/-/plate-select-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-serializer@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-serializer/-/plate-serializer-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
-"@udecode/plate-styled-components@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-styled-components/-/plate-styled-components-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    clsx "^1.1.1"
 
 "@udecode/plate-styled-components@9.3.1":
   version "9.3.1"
@@ -2650,65 +2256,17 @@
     "@udecode/plate-core" "9.3.1"
     clsx "^1.1.1"
 
-"@udecode/plate-table-ui@7.0.3":
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/@udecode/plate-table-ui/-/plate-table-ui-7.0.3.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-table" "7.0.2"
-    "@udecode/plate-toolbar" "7.0.2"
-    "@udecode/plate-ui-button" "7.0.3"
-    "@udecode/plate-ui-popover" "7.0.2"
-    jotai "^1.4.0"
-    re-resizable "^6.9.1"
-
-"@udecode/plate-table@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-table/-/plate-table-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-table@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-table/-/plate-table-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
 
-"@udecode/plate-toolbar@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-toolbar/-/plate-toolbar-7.0.2.tgz"
-  dependencies:
-    "@tippyjs/react" "^4.2.0"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-popper" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    react-popper "^2.2.4"
-    react-use "^17.1.1"
-
-"@udecode/plate-trailing-block@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-trailing-block/-/plate-trailing-block-7.0.2.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-
 "@udecode/plate-trailing-block@^9.2.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-trailing-block/-/plate-trailing-block-9.3.1.tgz"
   dependencies:
     "@udecode/plate-core" "9.3.1"
-
-"@udecode/plate-ui-button@7.0.3":
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/@udecode/plate-ui-button/-/plate-ui-button-7.0.3.tgz"
-  dependencies:
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
 
 "@udecode/plate-ui-combobox@^9.2.1":
   version "9.3.1"
@@ -2719,15 +2277,6 @@
     "@udecode/plate-styled-components" "9.3.1"
     "@udecode/plate-ui-popper" "9.3.1"
 
-"@udecode/plate-ui-popover@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.npmjs.org/@udecode/plate-ui-popover/-/plate-ui-popover-7.0.2.tgz"
-  dependencies:
-    "@tippyjs/react" "^4.2.5"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-
 "@udecode/plate-ui-popper@9.3.1":
   version "9.3.1"
   resolved "https://registry.npmjs.org/@udecode/plate-ui-popper/-/plate-ui-popper-9.3.1.tgz"
@@ -2735,72 +2284,6 @@
     "@popperjs/core" "2.10.2"
     "@udecode/plate-core" "9.3.1"
     react-popper "2.2.5"
-
-"@udecode/plate@^7.0.3":
-  version "7.0.3"
-  resolved "https://registry.npmjs.org/@udecode/plate/-/plate-7.0.3.tgz"
-  dependencies:
-    "@udecode/plate-alignment" "7.0.2"
-    "@udecode/plate-alignment-ui" "7.0.2"
-    "@udecode/plate-ast-serializer" "7.0.2"
-    "@udecode/plate-autoformat" "7.0.2"
-    "@udecode/plate-basic-elements" "7.0.2"
-    "@udecode/plate-basic-marks" "7.0.2"
-    "@udecode/plate-block-quote" "7.0.2"
-    "@udecode/plate-block-quote-ui" "7.0.2"
-    "@udecode/plate-break" "7.0.2"
-    "@udecode/plate-code-block" "7.0.2"
-    "@udecode/plate-code-block-ui" "7.0.2"
-    "@udecode/plate-combobox" "7.0.2"
-    "@udecode/plate-common" "7.0.2"
-    "@udecode/plate-core" "7.0.2"
-    "@udecode/plate-csv-serializer" "7.0.2"
-    "@udecode/plate-dnd" "7.0.2"
-    "@udecode/plate-find-replace" "7.0.2"
-    "@udecode/plate-find-replace-ui" "7.0.2"
-    "@udecode/plate-font" "7.0.2"
-    "@udecode/plate-font-ui" "7.0.3"
-    "@udecode/plate-heading" "7.0.2"
-    "@udecode/plate-highlight" "7.0.2"
-    "@udecode/plate-horizontal-rule" "7.0.2"
-    "@udecode/plate-html-serializer" "7.0.2"
-    "@udecode/plate-image" "7.0.2"
-    "@udecode/plate-image-ui" "7.0.2"
-    "@udecode/plate-indent" "7.0.2"
-    "@udecode/plate-indent-list" "7.0.2"
-    "@udecode/plate-kbd" "7.0.2"
-    "@udecode/plate-line-height" "7.0.2"
-    "@udecode/plate-line-height-ui" "7.0.2"
-    "@udecode/plate-link" "7.0.2"
-    "@udecode/plate-link-ui" "7.0.2"
-    "@udecode/plate-list" "7.0.2"
-    "@udecode/plate-list-ui" "7.0.2"
-    "@udecode/plate-md-serializer" "7.0.2"
-    "@udecode/plate-media-embed" "7.0.2"
-    "@udecode/plate-media-embed-ui" "7.0.2"
-    "@udecode/plate-mention" "7.0.2"
-    "@udecode/plate-mention-ui" "7.0.2"
-    "@udecode/plate-node-id" "7.0.2"
-    "@udecode/plate-normalizers" "7.0.2"
-    "@udecode/plate-paragraph" "7.0.2"
-    "@udecode/plate-placeholder" "7.0.2"
-    "@udecode/plate-popper" "7.0.2"
-    "@udecode/plate-reset-node" "7.0.2"
-    "@udecode/plate-select" "7.0.2"
-    "@udecode/plate-serializer" "7.0.2"
-    "@udecode/plate-styled-components" "7.0.2"
-    "@udecode/plate-table" "7.0.2"
-    "@udecode/plate-table-ui" "7.0.3"
-    "@udecode/plate-toolbar" "7.0.2"
-    "@udecode/plate-trailing-block" "7.0.2"
-    "@udecode/plate-ui-button" "7.0.3"
-    "@udecode/plate-ui-popover" "7.0.2"
-
-"@udecode/zustood@0.4.0":
-  version "0.4.0"
-  resolved "https://registry.npmjs.org/@udecode/zustood/-/zustood-0.4.0.tgz"
-  dependencies:
-    immer "9.0.6"
 
 "@udecode/zustood@0.4.4":
   version "0.4.4"
@@ -2838,10 +2321,6 @@
   resolved "https://registry.npmjs.org/@wry/trie/-/trie-0.3.1.tgz"
   dependencies:
     tslib "^2.3.0"
-
-"@xobotyi/scrollbar-width@^1.9.5":
-  version "1.9.5"
-  resolved "https://registry.npmjs.org/@xobotyi/scrollbar-width/-/scrollbar-width-1.9.5.tgz"
 
 "@yarnpkg/esbuild-plugin-pnp@^2.0.1-rc.3":
   version "2.0.1"
@@ -3751,12 +3230,6 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "https://registry.npmjs.org/copy-descriptor/-/copy-descriptor-0.1.1.tgz"
 
-copy-to-clipboard@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.npmjs.org/copy-to-clipboard/-/copy-to-clipboard-3.3.1.tgz"
-  dependencies:
-    toggle-selection "^1.0.6"
-
 core-js-compat@^3.18.0, core-js-compat@^3.19.1:
   version "3.19.1"
   resolved "https://registry.npmjs.org/core-js-compat/-/core-js-compat-3.19.1.tgz"
@@ -3843,13 +3316,6 @@ css-color-names@^0.0.4:
   version "0.0.4"
   resolved "https://registry.npmjs.org/css-color-names/-/css-color-names-0.0.4.tgz"
 
-css-in-js-utils@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.npmjs.org/css-in-js-utils/-/css-in-js-utils-2.0.1.tgz"
-  dependencies:
-    hyphenate-style-name "^1.0.2"
-    isobject "^3.0.1"
-
 css-select-base-adapter@^0.1.1:
   version "0.1.1"
   resolved "https://registry.npmjs.org/css-select-base-adapter/-/css-select-base-adapter-0.1.1.tgz"
@@ -3903,7 +3369,7 @@ csso@^4.0.2:
   dependencies:
     css-tree "^1.1.2"
 
-csstype@^3.0.2, csstype@^3.0.6:
+csstype@^3.0.2:
   version "3.0.10"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.0.10.tgz"
 
@@ -3925,7 +3391,7 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
+debug@^4.0.0, debug@^4.1.0, debug@^4.1.1:
   version "4.3.2"
   resolved "https://registry.npmjs.org/debug/-/debug-4.3.2.tgz"
   dependencies:
@@ -4046,14 +3512,6 @@ dlv@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/dlv/-/dlv-1.1.3.tgz"
 
-dnd-core@14.0.1:
-  version "14.0.1"
-  resolved "https://registry.npmjs.org/dnd-core/-/dnd-core-14.0.1.tgz"
-  dependencies:
-    "@react-dnd/asap" "^4.0.0"
-    "@react-dnd/invariant" "^2.0.0"
-    redux "^4.1.1"
-
 dom-serializer@0:
   version "0.2.2"
   resolved "https://registry.npmjs.org/dom-serializer/-/dom-serializer-0.2.2.tgz"
@@ -4147,12 +3605,6 @@ error-ex@^1.3.1:
   resolved "https://registry.npmjs.org/error-ex/-/error-ex-1.3.2.tgz"
   dependencies:
     is-arrayish "^0.2.1"
-
-error-stack-parser@^2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-2.0.6.tgz"
-  dependencies:
-    stackframe "^1.1.1"
 
 es-abstract@^1.17.2, es-abstract@^1.18.5, es-abstract@^1.19.1:
   version "1.19.1"
@@ -4439,7 +3891,7 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
+fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz"
 
@@ -4456,18 +3908,6 @@ fast-glob@^3.1.1, fast-glob@^3.2.4, fast-glob@^3.2.5, fast-glob@^3.2.7:
 fast-json-stable-stringify@^2.0.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.1.0.tgz"
-
-fast-memoize@^2.5.1:
-  version "2.5.2"
-  resolved "https://registry.npmjs.org/fast-memoize/-/fast-memoize-2.5.2.tgz"
-
-fast-shallow-equal@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/fast-shallow-equal/-/fast-shallow-equal-1.0.0.tgz"
-
-fastest-stable-stringify@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/fastest-stable-stringify/-/fastest-stable-stringify-2.0.2.tgz"
 
 fastq@^1.6.0:
   version "1.13.0"
@@ -4502,6 +3942,12 @@ fbjs@^3.0.0:
     promise "^7.1.1"
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.30"
+
+fetch-ponyfill@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/fetch-ponyfill/-/fetch-ponyfill-7.1.0.tgz#4266ed48b4e64663a50ab7f7fcb8e76f990526d0"
+  dependencies:
+    node-fetch "~2.6.1"
 
 file-selector@^0.1.11:
   version "0.1.19"
@@ -4905,10 +4351,6 @@ http-errors@1.7.2, http-errors@~1.7.2:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
-hyphenate-style-name@^1.0.2:
-  version "1.0.4"
-  resolved "https://registry.npmjs.org/hyphenate-style-name/-/hyphenate-style-name-1.0.4.tgz"
-
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz"
@@ -4979,12 +4421,6 @@ inherits@2, inherits@^2.0.0, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, 
 inherits@2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/inherits/-/inherits-2.0.3.tgz"
-
-inline-style-prefixer@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.npmjs.org/inline-style-prefixer/-/inline-style-prefixer-6.0.1.tgz"
-  dependencies:
-    css-in-js-utils "^2.0.0"
 
 internal-slot@^1.0.3:
   version "1.0.3"
@@ -5432,14 +4868,6 @@ jest-worker@^26.6.2:
     "@types/node" "*"
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
-
-jotai@^1.4.0:
-  version "1.4.3"
-  resolved "https://registry.npmjs.org/jotai/-/jotai-1.4.3.tgz"
-
-js-cookie@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npmjs.org/js-cookie/-/js-cookie-2.2.1.tgz"
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
@@ -6304,6 +5732,16 @@ mime-db@1.51.0:
   version "1.51.0"
   resolved "https://registry.npmjs.org/mime-db/-/mime-db-1.51.0.tgz"
 
+mime-db@1.52.0:
+  version "1.52.0"
+  resolved "https://registry.yarnpkg.com/mime-db/-/mime-db-1.52.0.tgz#bbabcdc02859f4987301c856e3387ce5ec43bf70"
+
+mime-types@^2.1.24:
+  version "2.1.35"
+  resolved "https://registry.yarnpkg.com/mime-types/-/mime-types-2.1.35.tgz#381a871b62a734450660ae3deee44813f70d959a"
+  dependencies:
+    mime-db "1.52.0"
+
 mime-types@~2.1.24:
   version "2.1.34"
   resolved "https://registry.npmjs.org/mime-types/-/mime-types-2.1.34.tgz"
@@ -6384,19 +5822,6 @@ multer@1.4.2, multer@^1.4.2:
     on-finished "^2.3.0"
     type-is "^1.6.4"
     xtend "^4.0.0"
-
-nano-css@^5.3.1:
-  version "5.3.4"
-  resolved "https://registry.npmjs.org/nano-css/-/nano-css-5.3.4.tgz"
-  dependencies:
-    css-tree "^1.1.2"
-    csstype "^3.0.6"
-    fastest-stable-stringify "^2.0.2"
-    inline-style-prefixer "^6.0.0"
-    rtl-css-js "^1.14.0"
-    sourcemap-codec "^1.4.8"
-    stacktrace-js "^2.0.2"
-    stylis "^4.0.6"
 
 nanoclone@^0.2.1:
   version "0.2.1"
@@ -6482,7 +5907,7 @@ node-emoji@^1.11.0:
   dependencies:
     lodash "^4.17.21"
 
-node-fetch@2.6.7, node-fetch@^2.6.1:
+node-fetch@2.6.7, node-fetch@^2.6.1, node-fetch@~2.6.1:
   version "2.6.7"
   resolved "https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz"
   dependencies:
@@ -6649,10 +6074,6 @@ p-locate@^4.1.0:
 p-try@^2.0.0:
   version "2.2.0"
   resolved "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
-
-papaparse@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.npmjs.org/papaparse/-/papaparse-5.3.1.tgz"
 
 param-case@^3.0.4:
   version "3.0.4"
@@ -6984,12 +6405,6 @@ raw-body@2.4.0:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-re-resizable@^6.9.0, re-resizable@^6.9.1:
-  version "6.9.1"
-  resolved "https://registry.npmjs.org/re-resizable/-/re-resizable-6.9.1.tgz"
-  dependencies:
-    fast-memoize "^2.5.1"
-
 react-beautiful-dnd@^13.1.0:
   version "13.1.0"
   resolved "https://registry.npmjs.org/react-beautiful-dnd/-/react-beautiful-dnd-13.1.0.tgz"
@@ -7022,22 +6437,6 @@ react-datetime@^2.16.3:
     object-assign "^3.0.0"
     prop-types "^15.5.7"
     react-onclickoutside "^6.5.0"
-
-react-dnd-html5-backend@^14.0.0:
-  version "14.0.2"
-  resolved "https://registry.npmjs.org/react-dnd-html5-backend/-/react-dnd-html5-backend-14.0.2.tgz"
-  dependencies:
-    dnd-core "14.0.1"
-
-react-dnd@^14.0.2:
-  version "14.0.4"
-  resolved "https://registry.npmjs.org/react-dnd/-/react-dnd-14.0.4.tgz"
-  dependencies:
-    "@react-dnd/invariant" "^2.0.0"
-    "@react-dnd/shallowequal" "^2.0.0"
-    dnd-core "14.0.1"
-    fast-deep-equal "^3.1.3"
-    hoist-non-react-statics "^3.3.2"
 
 react-dom@^17.0.2:
   version "17.0.2"
@@ -7081,7 +6480,7 @@ react-onclickoutside@^6.5.0:
   version "6.12.0"
   resolved "https://registry.npmjs.org/react-onclickoutside/-/react-onclickoutside-6.12.0.tgz"
 
-react-popper@2.2.5, react-popper@^2.2.4:
+react-popper@2.2.5:
   version "2.2.5"
   resolved "https://registry.npmjs.org/react-popper/-/react-popper-2.2.5.tgz"
   dependencies:
@@ -7111,37 +6510,6 @@ react-router@6.0.2:
   resolved "https://registry.npmjs.org/react-router/-/react-router-6.0.2.tgz"
   dependencies:
     history "^5.1.0"
-
-react-textarea-autosize@^8.3.3:
-  version "8.3.3"
-  resolved "https://registry.npmjs.org/react-textarea-autosize/-/react-textarea-autosize-8.3.3.tgz"
-  dependencies:
-    "@babel/runtime" "^7.10.2"
-    use-composed-ref "^1.0.0"
-    use-latest "^1.0.0"
-
-react-universal-interface@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.npmjs.org/react-universal-interface/-/react-universal-interface-0.6.2.tgz"
-
-react-use@^17.1.1:
-  version "17.3.1"
-  resolved "https://registry.npmjs.org/react-use/-/react-use-17.3.1.tgz"
-  dependencies:
-    "@types/js-cookie" "^2.2.6"
-    "@xobotyi/scrollbar-width" "^1.9.5"
-    copy-to-clipboard "^3.3.1"
-    fast-deep-equal "^3.1.3"
-    fast-shallow-equal "^1.0.0"
-    js-cookie "^2.2.1"
-    nano-css "^5.3.1"
-    react-universal-interface "^0.6.2"
-    resize-observer-polyfill "^1.5.1"
-    screenfull "^5.1.0"
-    set-harmonic-interval "^1.0.1"
-    throttle-debounce "^3.0.1"
-    ts-easing "^0.2.0"
-    tslib "^2.1.0"
 
 react@^17.0.2:
   version "17.0.2"
@@ -7204,7 +6572,7 @@ reduce-css-calc@^2.1.8:
     css-unit-converter "^1.1.1"
     postcss-value-parser "^3.3.0"
 
-redux@^4.0.0, redux@^4.0.4, redux@^4.1.1:
+redux@^4.0.0, redux@^4.0.4:
   version "4.1.2"
   resolved "https://registry.npmjs.org/redux/-/redux-4.1.2.tgz"
   dependencies:
@@ -7350,7 +6718,7 @@ remark-rehype@^8.0.0:
   dependencies:
     mdast-util-to-hast "^10.2.0"
 
-remark-slate@^1.4.0, remark-slate@^1.8.0:
+remark-slate@^1.8.0:
   version "1.8.0"
   resolved "https://registry.npmjs.org/remark-slate/-/remark-slate-1.8.0.tgz"
   dependencies:
@@ -7410,10 +6778,6 @@ require-main-filename@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/require-main-filename/-/require-main-filename-2.0.0.tgz"
 
-resize-observer-polyfill@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.npmjs.org/resize-observer-polyfill/-/resize-observer-polyfill-1.5.1.tgz"
-
 resolve-from@5.0.0, resolve-from@^5.0.0:
   version "5.0.0"
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-5.0.0.tgz"
@@ -7466,12 +6830,6 @@ rimraf@^3.0.0:
 rsvp@^4.8.4:
   version "4.8.5"
   resolved "https://registry.npmjs.org/rsvp/-/rsvp-4.8.5.tgz"
-
-rtl-css-js@^1.14.0:
-  version "1.14.5"
-  resolved "https://registry.npmjs.org/rtl-css-js/-/rtl-css-js-1.14.5.tgz"
-  dependencies:
-    "@babel/runtime" "^7.1.2"
 
 run-parallel-limit@^1.1.0:
   version "1.1.0"
@@ -7540,10 +6898,6 @@ scheduler@^0.20.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
 
-screenfull@^5.1.0:
-  version "5.2.0"
-  resolved "https://registry.npmjs.org/screenfull/-/screenfull-5.2.0.tgz"
-
 scroll-into-view-if-needed@^2.2.20:
   version "2.2.28"
   resolved "https://registry.npmjs.org/scroll-into-view-if-needed/-/scroll-into-view-if-needed-2.2.28.tgz"
@@ -7608,10 +6962,6 @@ set-blocking@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz"
 
-set-harmonic-interval@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/set-harmonic-interval/-/set-harmonic-interval-1.0.1.tgz"
-
 set-value@^2.0.0, set-value@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/set-value/-/set-value-2.0.1.tgz"
@@ -7668,11 +7018,13 @@ signedsource@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/signedsource/-/signedsource-1.0.0.tgz"
 
-simple-git@1.126.0:
-  version "1.126.0"
-  resolved "https://registry.npmjs.org/simple-git/-/simple-git-1.126.0.tgz"
+simple-git@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.5.0.tgz#3c3538f4d7a1b3c8f3904412b12740bdcad9c8b1"
   dependencies:
-    debug "^4.0.1"
+    "@kwsites/file-exists" "^1.1.1"
+    "@kwsites/promise-deferred" "^1.1.1"
+    debug "^4.3.3"
 
 simple-swizzle@^0.2.2:
   version "0.2.2"
@@ -7773,10 +7125,6 @@ source-map-url@^0.4.0:
   version "0.4.1"
   resolved "https://registry.npmjs.org/source-map-url/-/source-map-url-0.4.1.tgz"
 
-source-map@0.5.6:
-  version "0.5.6"
-  resolved "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
-
 source-map@0.7.3:
   version "0.7.3"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.7.3.tgz"
@@ -7788,10 +7136,6 @@ source-map@^0.5.0, source-map@^0.5.6:
 source-map@^0.6.1:
   version "0.6.1"
   resolved "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
-
-sourcemap-codec@^1.4.8:
-  version "1.4.8"
-  resolved "https://registry.npmjs.org/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz"
 
 space-separated-tokens@^1.0.0:
   version "1.1.5"
@@ -7816,31 +7160,6 @@ sprintf-js@~1.0.2:
 stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.npmjs.org/stable/-/stable-0.1.8.tgz"
-
-stack-generator@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.npmjs.org/stack-generator/-/stack-generator-2.0.5.tgz"
-  dependencies:
-    stackframe "^1.1.1"
-
-stackframe@^1.1.1:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/stackframe/-/stackframe-1.2.0.tgz"
-
-stacktrace-gps@^3.0.4:
-  version "3.0.4"
-  resolved "https://registry.npmjs.org/stacktrace-gps/-/stacktrace-gps-3.0.4.tgz"
-  dependencies:
-    source-map "0.5.6"
-    stackframe "^1.1.1"
-
-stacktrace-js@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.npmjs.org/stacktrace-js/-/stacktrace-js-2.0.2.tgz"
-  dependencies:
-    error-stack-parser "^2.0.6"
-    stack-generator "^2.0.5"
-    stacktrace-gps "^3.0.4"
 
 state-toggle@^1.0.0:
   version "1.0.3"
@@ -7980,10 +7299,6 @@ stylis@3.5.4:
   version "3.5.4"
   resolved "https://registry.npmjs.org/stylis/-/stylis-3.5.4.tgz"
 
-stylis@^4.0.6:
-  version "4.0.10"
-  resolved "https://registry.npmjs.org/stylis/-/stylis-4.0.10.tgz"
-
 subscriptions-transport-ws@^0.9.19:
   version "0.9.19"
   resolved "https://registry.npmjs.org/subscriptions-transport-ws/-/subscriptions-transport-ws-0.9.19.tgz"
@@ -8087,20 +7402,19 @@ test-exclude@^6.0.0:
     glob "^7.1.4"
     minimatch "^3.0.4"
 
-throttle-debounce@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/throttle-debounce/-/throttle-debounce-3.0.1.tgz"
-
-tinacms@^0.66.9:
-  version "0.66.9"
-  resolved "https://registry.npmjs.org/tinacms/-/tinacms-0.66.9.tgz"
+tinacms@^0.68.11:
+  version "0.68.11"
+  resolved "https://registry.yarnpkg.com/tinacms/-/tinacms-0.68.11.tgz#7b12cd32d2ac5c8a879fc300cc7c3fb02d8ff4a9"
   dependencies:
     "@graphql-tools/relay-operation-optimizer" "^6.4.1"
-    "@headlessui/react" "^1.4.1"
+    "@headlessui/react" "^1.5.0"
     "@heroicons/react" "^1.0.4"
-    "@tinacms/sharedctx" "0.1.0"
-    "@tinacms/toolkit" "0.56.18"
+    "@react-hook/window-size" "^3.0.7"
+    "@tinacms/schema-tools" "0.0.6"
+    "@tinacms/sharedctx" "0.1.1"
+    "@tinacms/toolkit" "0.56.34"
     crypto-js "^4.0.0"
+    fetch-ponyfill "^7.1.0"
     final-form "4.20.1"
     graphql "^15.1.0"
     graphql-tag "^2.11.0"
@@ -8125,12 +7439,6 @@ tiny-warning@^1.0.3:
 tinycolor2@^1.4.1:
   version "1.4.2"
   resolved "https://registry.npmjs.org/tinycolor2/-/tinycolor2-1.4.2.tgz"
-
-tippy.js@^6.3.1:
-  version "6.3.7"
-  resolved "https://registry.npmjs.org/tippy.js/-/tippy.js-6.3.7.tgz"
-  dependencies:
-    "@popperjs/core" "^2.9.0"
 
 title-case@^3.0.3:
   version "3.0.3"
@@ -8180,10 +7488,6 @@ to-regex@^3.0.1, to-regex@^3.0.2:
     regex-not "^1.0.2"
     safe-regex "^1.1.0"
 
-toggle-selection@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/toggle-selection/-/toggle-selection-1.0.6.tgz"
-
 toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/toidentifier/-/toidentifier-1.0.0.tgz"
@@ -8207,14 +7511,6 @@ trough@^1.0.0:
 trough@^2.0.0:
   version "2.0.2"
   resolved "https://registry.npmjs.org/trough/-/trough-2.0.2.tgz"
-
-ts-easing@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/ts-easing/-/ts-easing-0.2.0.tgz"
-
-ts-essentials@^2.0.3:
-  version "2.0.12"
-  resolved "https://registry.npmjs.org/ts-essentials/-/ts-essentials-2.0.12.tgz"
 
 ts-invariant@^0.4.0:
   version "0.4.4"
@@ -8316,7 +7612,7 @@ unified@^10.0.0, unified@^10.1.0:
     trough "^2.0.0"
     vfile "^5.0.0"
 
-unified@^9.1.0, unified@^9.2.0:
+unified@^9.1.0:
   version "9.2.2"
   resolved "https://registry.npmjs.org/unified/-/unified-9.2.2.tgz"
   dependencies:
@@ -8486,27 +7782,15 @@ url@^0.11.0:
     punycode "1.3.2"
     querystring "0.2.0"
 
-use-composed-ref@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/use-composed-ref/-/use-composed-ref-1.1.0.tgz"
-  dependencies:
-    ts-essentials "^2.0.3"
-
 use-deep-compare@1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/use-deep-compare/-/use-deep-compare-1.1.0.tgz"
   dependencies:
     dequal "1.0.0"
 
-use-isomorphic-layout-effect@^1.0.0, use-isomorphic-layout-effect@^1.1.1:
+use-isomorphic-layout-effect@^1.1.1:
   version "1.1.1"
   resolved "https://registry.npmjs.org/use-isomorphic-layout-effect/-/use-isomorphic-layout-effect-1.1.1.tgz"
-
-use-latest@^1.0.0:
-  version "1.2.0"
-  resolved "https://registry.npmjs.org/use-latest/-/use-latest-1.2.0.tgz"
-  dependencies:
-    use-isomorphic-layout-effect "^1.0.0"
 
 use-memo-one@^1.1.1:
   version "1.1.2"
@@ -8778,13 +8062,13 @@ zod@^3.14.3:
   version "3.14.4"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.14.4.tgz#e678fe9e5469f4663165a5c35c8f3dc66334a5d6"
 
-zustand@3.5.11, zustand@^3.4.2:
-  version "3.5.11"
-  resolved "https://registry.npmjs.org/zustand/-/zustand-3.5.11.tgz"
-
 zustand@3.6.7:
   version "3.6.7"
   resolved "https://registry.npmjs.org/zustand/-/zustand-3.6.7.tgz"
+
+zustand@^3.4.2:
+  version "3.5.11"
+  resolved "https://registry.npmjs.org/zustand/-/zustand-3.5.11.tgz"
 
 zwitch@^1.0.0:
   version "1.0.5"
